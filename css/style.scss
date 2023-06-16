@@ -1,0 +1,1000 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+:focus, :active {
+    outline: none;
+}
+
+a:focus, a:active {
+    outline: none;
+}
+
+nav, footer, header, aside {
+    display: block;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a, a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+body {
+    color: #252B42;
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0;
+        height: 104px;
+    }
+}
+
+.container {
+    max-width: 1070px;
+    padding: 0 10px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.logo {
+    font-family: "Martel";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.2px;
+    letter-spacing: 0.1px;
+    color: #252B42;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 31px;
+    }
+    &__link {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+        color: #737373;
+    }
+    &__bts {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        padding: 2px 20px;
+    }
+    &__tog-btn {
+        display: none;
+    }
+}
+
+.btn2 {
+    height: 20px;
+    width: 20px;
+}
+
+.main {
+    background-image: url("../img/main.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    &__inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        padding-top: 104px;
+    }
+    &__cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 34px;
+        max-width: 509px;
+    }
+    &__title {
+        font-family: "Martel";
+        font-style: normal;
+        font-weight: 900;
+        font-size: 58px;
+        line-height: 65px;
+        letter-spacing: 0.2px;
+    }
+    &__subtitle {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.2px;
+        color: #737373;
+    }
+    &__btns {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+    &__img {
+        max-width: 509px;
+    }
+    &__img1 {
+        margin: 0 -28px;
+    }
+    &__btn-get {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 36px;
+        border-radius: 37px;
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 28px;
+        letter-spacing: 0.2px;
+        background-color: #784F33;
+        color: #FFFFFF;
+    }
+    &__btn-more {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 36px;
+        border-radius: 37px;
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 28px;
+        letter-spacing: 0.2px;
+        border: 1px solid #784F33;
+        color: #784F33;
+    }
+}
+
+.practice-areas{
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+        padding: 100px 0px;
+    }
+    &__main-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    &__title {
+        font-family: "Martel";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 50px;
+        letter-spacing: 0.2px;
+    }
+    &__subtitle {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        color: #737373;
+        text-align: center;
+    }
+    &__cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        width: 100%;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 30px 40px;
+        width: 100%;
+        box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+        background: #F9F9F9;
+        border-radius: 5px;
+        &:hover {
+            background-color: #295C7A;
+            color: #FFFFFF;
+            filter: brightness(5);
+        }
+    }
+    &__img {
+        width: 53px;
+        height: 53px;
+        filter: brightness(5);
+    }
+    &__txt {
+        font-family: "Martel";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+        letter-spacing: 0.1px;
+    }
+    
+}
+
+.practice-advice {
+    background: #FAFAFA;
+    text-align: center;
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+        padding: 80px 0px;
+    }
+    &__main-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 45px 0px;
+    }
+    &__title {
+        font-family: "Martel";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 50px;
+        letter-spacing: 0.2px;
+    }
+    &__subtitle {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        color: #737373;
+    }
+    &__cards {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 30px;
+        width: 100%;
+        align-items: stretch;
+    }
+    &__card {
+        &-item {
+            width: 100%;
+            background-color: #fff;
+            text-align: start;
+            margin: 0 auto;
+        }
+        &-cont {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 15px;
+            padding: 30px;
+        }
+        &-title {
+            font-family: "Martel";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.2px;
+            letter-spacing: 0.1px;
+            width: 81%;
+        }
+        &-subtitle {
+            font-family: "Open Sans";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.2px;
+            color: #737373;
+            width: 90%;
+        }
+        &-img img {
+            width: 100%;
+        }
+    }
+}
+
+.about {
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+        padding: 100px 0;
+    }
+    &__main-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+    &__title {
+        font-family: "Martel";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 50px;
+        letter-spacing: 0.2px;
+    }
+    &__subtitle {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        color: #737373;
+        text-align: center;
+    }
+    &__cont {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 120px;
+        &-txt {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 30px;
+        }
+        &-main-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 10px;
+            padding: 20px 0;
+        }
+        &-title {
+            font-family: "Martel";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 50px;
+            letter-spacing: 0.2px;
+        }
+        &-subtitle {
+            font-family: "Open Sans";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.2px;
+            color: #737373;
+            width: 91%;
+        }
+        &-card {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 20px;
+            width: 100%;
+            align-items: flex-start;
+        }
+        &-card {
+            & img {
+                width: 32px;
+                height: 32px;
+            }
+            &-main-content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 5px;
+            }
+            &-title {
+                font-family: "Martel";
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.2px;
+                letter-spacing: 0.1px;
+            }
+            &-subtitle {
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 24px;
+                letter-spacing: 0.2px;
+                color: #737373;
+            }
+        }
+    }
+    &__video {
+        background-image: url("../card-item.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-width: 600px;
+        height: 442px;
+    }
+}
+
+.clients {
+    position: relative;
+    background: #FAFAFA;
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+    }
+    &__cont {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        padding: 50px 0;
+    }
+    &__item {
+        padding: 0 25px;
+        & img {
+            width: 100%;
+        }
+    }
+    &__subscribe {
+        margin: 20px 0;
+        padding: 30px 50px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 180px;
+        width: 100%;
+        background: linear-gradient(270deg, #295C7A -1.04%, #0072B5 100%);
+        color: #FFFFFF;
+    }
+    &__cta {
+        font-family: "Martel";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 0.2px;
+        letter-spacing: 0.1px;
+        text-align: left;
+    }
+    &__input {
+        position: relative;
+    }
+    &__txt {
+        width: 450px;
+        height: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 15px 20px;
+        border-radius: 5px;
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 28px;
+        letter-spacing: 0.2px;
+        background: #F9F9F9;
+        border: 1px solid #E6E6E6;
+        padding-right: 0;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 28px;
+        letter-spacing: 0.2px;
+    }
+    &__btn {
+        position: absolute;
+        right: 0px;
+        top: 0;
+        background: #D0A144;
+        border: 1px solid #E6E6E6;
+        border-radius: 0px 5px 5px 0px;
+        padding: 15px 22.5px;
+        color: #FFFFFF;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 28px;
+        letter-spacing: 0.2px;
+    }
+    &__bg {
+        position: absolute;
+        bottom: 0;
+        background: #252B42;
+        height: 77px;
+        width: 100%;
+    }
+}
+
+
+.contact {
+    background: #F3F3F3;
+    &__inner {
+        padding: 80px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+    }
+    &__main-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    &__title {
+        font-family: "Martel";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 50px;
+        letter-spacing: 0.2px;
+    }
+    &__subtitle {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        color: #737373;
+    }
+    &__cont {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    &__card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        background: #FFFFFF;
+        padding: 50px 40px;
+        &:hover {
+            padding: 80px 40px;
+            color: #FFFFFF;
+            background: #252B42;
+        }
+        &-cont {
+            font-family: "Open Sans";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0.2px;
+        }
+        &-title {
+            font-family: "Martel";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.2px;
+            letter-spacing: 0.1px;
+        }
+        &-btn {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-family: "Open Sans";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 28px;
+            letter-spacing: 0.2px;
+            border: 1px solid #D0A144;
+            font-family: "Open Sans";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0.2px;
+            color: #D0A144;
+        }
+    }
+}
+
+.reqvest {
+    &__inner {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 360px;
+        width: 100%;
+        padding: 40px 0;
+    }
+    &__main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 10px;
+        text-align: left;
+    }
+    &__title {
+        font-family: "Martel";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 0.2px;
+        letter-spacing: 0.1px;
+    }
+    &__subtitile {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        color: #737373;
+    }
+    &__btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 15px 40px;
+        border-radius: 5px;
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 28px;
+        letter-spacing: 0.2px;
+        margin: 0 39px;
+        background: #784F33;
+        color: #FFFFFF;
+    }
+}
+
+.footer {
+    background: linear-gradient(270deg, #295C7A -1.04%, #0072B5 100%);
+    color: #FFFFFF;
+    &__inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        justify-content: space-between;
+        padding: 50px 0;
+    }
+    &__col {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+        text-align: left;
+    }
+    &__title {
+        font-family: "Martel";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+        letter-spacing: 0.1px;
+    }
+    &__link {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+        color: #737373;
+        color: #FFFFFF;
+    }
+    &__cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 10px;
+        justify-content: flex-start;
+    }
+    &__contacts {
+        min-width: 320px;
+    }
+    &__support {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+        color: #FFFFFF;
+    }
+}
+
+.sub-footer {
+    &__inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        justify-content: space-between;
+        padding: 25px 0;
+    }
+    &__txt {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+        color: #737373;
+    }
+    &__msgrs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 0 40px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .main__img1 {
+        width: 100%;
+    }
+    .about__video {
+        min-width: 400px;
+    }
+    .contact__cont {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+    }
+    .reqvest__inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+        justify-content: space-between;
+        padding: 40px 0;
+    }
+}
+@media (max-width: 865px) {
+    .main__inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 108px;
+        text-align: center;
+    }
+    .main__cont {
+        align-items: stretch;
+    }
+    .main__title {
+        font-family: "Martel";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 50px;
+        letter-spacing: 0.2px;
+    }
+    .main__btns {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .practice-advice__cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    .about__cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 120px;
+    }
+    .about .about__video {
+        min-width: 333px;
+    }
+    .clients__subscribe {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    .clients__cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+        padding: 50px 0;
+    }
+    .clients__form {
+        width: 100%;
+    }
+    .clients__cta {
+        text-align: center;
+    }
+    .contact__cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    .reqvest__inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 50px;
+        padding: 40px 0;
+        padding-left: 90px;
+    }
+    .footer__inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 30px;
+        padding-left: 90px;
+    }
+    .footer__contacts {
+        min-width: 0;
+    }
+}
+@media (max-width: 450px) {
+    .container {
+        max-width: 95%;
+    }
+    .menu__tog-btn {
+        display: block;
+    }
+    .menu__list {
+        display: none;
+    }
+    .practice-areas__cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    .clients__txt {
+        width: 337px;
+    }
+    .clients__subscribe {
+        padding: 20px 0;
+        width: 100%;
+    }
+    .sub-footer__inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+}
